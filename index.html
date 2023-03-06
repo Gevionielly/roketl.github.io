@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rocket Launcher</title>
+  </head>
+  <body>
+    <img src="image.jpg" alt="" width="1000" height="500">
+    <img src="gif.gif" alt="" width="200" height="500">
+    <audio controls autoplay>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <form>
+      <label for="text">Country:</label>
+      <input type="text" id="text" name="text">
+<!--  -->
+      <label for="text">Region/State:</label>
+      <input type="text" id="text" name="text">
+<!--  -->
+      <label for="text">City:</label>
+      <input type="text" id="text" name="text">
+<!--  -->
+      <label for="number">Bombs:</label>
+      <input type="number" id="number" name="number">
+<!--  -->
+      <button type="button" onclick="launch()">Launch</button>
+    </form>
+    <div id="output"></div>
+    <script>
+      function launch() {
+        document.getElementById("output").innerHTML = "<h1>Launched</h1>";
+      }
+    </script>
+  </body>
+</html>
